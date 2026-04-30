@@ -1,0 +1,35 @@
+---
+title: lxuu.dev
+description: Personal site and digital garden. Built with Astro, SolidJS, and Tailwind.
+tags: [Astro, SolidJS, Tailwind, TypeScript]
+status: active
+year: 2025
+month: 10
+featured: true
+order: 1
+links:
+  github: https://github.com/lxuu/lxuu.dev
+  live: https://lxuu.dev
+---
+
+This site. The one you're reading right now.
+
+## Why
+
+Wanted a place to think out loud and show what I'm building. Most portfolio sites feel like resumes.
+This one doesn't try to be.
+
+## Stack
+
+- **Astro** — page structure and static output
+- **SolidJS** — interactive islands (nav, toggles)
+- **Tailwind v4** — utility styles
+- **TypeScript** — types everywhere
+
+## What's interesting
+
+Using Astro's content collections for structured data (this page, actually). MDX lets me write
+rich descriptions without fighting with JSON or hardcoding HTML.
+
+The GitHub contribution heatmap pulls live data at build time via the GitHub GraphQL API —
+no client-side fetch, no loading state.
