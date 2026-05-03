@@ -1,0 +1,32 @@
+---
+title: opex.lxuu.dev
+description: Open Excel exports in the browser—quick to load, no extra app, no ad-heavy viewers.
+tags: [ViteJS, ReactJS, Tailwind, TypeScript]
+status: active
+year: 2026
+month: 1
+featured: true
+thumbnail: https://res.cloudinary.com/lixuling/image/upload/v1777800633/projects/2026-05-03-163007_hyprshot_qfbgec.png
+order: 2
+links:
+  github: https://github.com/luxuling/excel-opener
+  live: https://opex.lxuu.dev
+---
+
+A small web app for opening `.xlsx` (and friends) in the tab you already have open, so you can
+eyeball exports while you are still in the middle of building them.
+
+## Why
+
+Whenever I ship an “export to Excel” feature in something I am working on, I end up opening the
+file over and over to check sheets, headers, and row after row of values. I did not want to depend
+on another installed program for that loop, and the hosted viewers I tried were slow, noisy, and
+full of ads. This site is the lightweight alternative: drop the file, skim the data, close the
+tab.
+
+## Stack
+
+- **Vite** — dev server and production build
+- **React** — UI for parsing and rendering the workbook
+- **Tailwind** — layout and styling
+- **TypeScript** — types across the app
