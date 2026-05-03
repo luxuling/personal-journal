@@ -6,7 +6,7 @@ status: active
 year: 2025
 month: 10
 featured: true
-thumbnail: https://raw.githubusercontent.com/luxuling/personal-journal/main/projects/assets/lxuu-dev.png
+thumbnail: https://res.cloudinary.com/lixuling/image/upload/v1777799253/projects/2026-05-01-214623_hyprshot_yhyk3d.png
 order: 1
 links:
   github: https://github.com/lxuu/lxuu.dev
@@ -17,8 +17,8 @@ This site. The one you're reading right now.
 
 ## Why
 
-Wanted a place to think out loud and show what I'm building. Most portfolio sites feel like resumes.
-This one doesn't try to be.
+I wanted something simple: a place where people can actually stay and read without friction, and
+where I can keep updating my programming journey as it unfolds.
 
 ## Stack
 
@@ -29,8 +29,14 @@ This one doesn't try to be.
 
 ## What's interesting
 
-Using Astro's content collections for structured data (this page, actually). MDX lets me write
-rich descriptions without fighting with JSON or hardcoding HTML.
+I went with **Astro** instead of **Next.js**—I was tired of the Next.js shape of things for a
+site that's mostly pages and prose. For me, MDX (including remote MDX) is easier to reason about
+and pipe through Astro than it was in the setups I kept reaching for with Next. **SolidJS** only
+shows up where something actually needs to run in the browser; that island model keeps client-side
+work smaller and simpler than treating the whole site like an app.
+
+Astro's content collections still back the structured data (this page, for example), and MDX means
+I can write richer descriptions without fighting JSON or hardcoded HTML.
 
 The GitHub contribution heatmap pulls live data at build time via the GitHub GraphQL API —
 no client-side fetch, no loading state.
