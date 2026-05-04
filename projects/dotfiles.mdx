@@ -1,0 +1,96 @@
+---
+title: dotfiles
+description: Version-controlled personal configuration for Arch Linux—shell, editor, window manager, and the tools I use every day.
+tags: [Arch Linux, dotfiles, Zsh]
+status: active
+year: 2026
+month: 5
+featured: false
+order: 4
+links:
+  github: https://github.com/luxuling/dotfiles
+---
+
+My personal dotfiles: everything I rely on to work and live in the terminal and on the desktop, kept in one place so I can reproduce my setup on a new machine or after a reinstall.
+
+## Why
+
+On Arch you end up tuning a lot of small pieces—shell, editor, compositor or WM, status bar, fonts, keybindings. Without a repo, those choices live only on disk and in muscle memory. I track them in Git so changes are deliberate, documented, and easy to diff when something breaks after an update.
+
+## Daily environment
+
+### OS
+
+**Arch Linux**
+
+Rolling release distro. Minimal base, you build exactly what you want on top of it.
+
+### Editor
+
+**NeoVim**
+
+Modal editor. Steep curve, high ceiling. Fast and keyboard-driven.
+
+### Terminal
+
+**Ghostty**
+
+Fast native terminal with custom shader support. Running a glow shader on top for that extra character bloom.
+
+### Shell
+
+**Zsh + Starship**
+
+Zsh for the shell, Starship for a minimal and fast cross-shell prompt.
+
+### Window Manager
+
+**Hyprland**
+
+Dynamic tiling Wayland compositor. Smooth animations, highly configurable.
+
+### Terminal Multiplexer
+
+**Tmux**
+
+Session and window management inside the terminal. Keeps workflows persistent.
+
+### Bar
+
+**Waybar**
+
+Wayland status bar. Shows what matters, hides the rest.
+
+### App Launcher
+
+**Rofi**
+
+Keyboard-driven application launcher and switcher.
+
+### Notifications
+
+**Swaync**
+
+Notification daemon with a clean notification center panel.
+
+### Wallpaper
+
+**Hyprpaper**
+
+Hyprland-native wallpaper utility. Fast, wayland-native, no flicker on workspace switch.
+
+### Lock Screen
+
+**Hyprlock**
+
+Hyprland-native lock screen. Minimal and consistent with the rest of the setup.
+
+### Font
+
+**Maple Mono**
+
+Monospace font with ligatures. Readable at small sizes in both the editor and terminal.
+
+## What's interesting
+
+Dotfiles are less about showing off and more about **consistency**: the same shortcuts, prompts, and editor behavior whether I am on my main box or setting up again from scratch. When I add a tool, I try to wire it through the repo so the next “fresh install” is boring instead of a weekend project.
